@@ -1,0 +1,43 @@
+.header_tex {
+  z-index: 1;
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  transform: translateX(800px);
+  H_one{
+    color: #242b33;
+    font-size: 45px;
+  }
+  h1 {
+    color: #242b33;
+    font-size: 45px;
+  }
+  
+  h2 {
+    color: #242b33;
+    font-size: 33px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #242b33;
+    font-size: 14px;
+    line-height: 1.8rem;
+    width: 400px;
+  }
+}
+.four {
+  overflow:hidden;
+  background-color: #003459;
+  margin-top: 80px;
+  .pappy{
+    z-index: 1;
+  }
+  .chorak{
+   
+    transform: translate(-1217px, 40px);
+  }
+  .tort{
+    transform: translate(14px);
+    
+  }
+}

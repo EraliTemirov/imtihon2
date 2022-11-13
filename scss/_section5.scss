@@ -1,0 +1,31 @@
+.bac{
+    background-color: #FFB775;
+
+.asosiy{
+    width: 500px;
+    position: absolute;
+    z-index: 500;
+    transform: translate(-70px,-100px);
+    span{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 30px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    p{
+        width: 300px;
+        line-height: 1.8rem;
+    }
+}
+    .birinchi{
+        z-index: 100;
+        transform: translate(600px,-300px);
+    }
+}
+    .img{
+        z-index: 1;
+        transform: translateX(-450px);
+    }
+ 
