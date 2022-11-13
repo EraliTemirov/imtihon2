@@ -1,28 +1,142 @@
+.yuza{
+    background-color: #c9a1a1;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+    animation: tugadi .3s linear .5s both;
+    .aylana{
+        width: 60px;
+        height: 60px;
+        border: 5px dashed black;
+        border-radius: 50%;
+        animation: zagruzka 2s ease-in-out infinite;
+    }
+}
+@keyframes zagruzka{
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes tugadi {
+    to{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+.kichik{
+    transform: translate(140px,-390px);
+     @media screen and (max-width: 1200px){
+      transform: translate(10px,-390px);
+    }
+    @media screen and (max-width: 840px){
+    transform: translate(330px,-840px);
+    }
+
+}
+.rasm{
+    width: 650px;
+    position: absolute;
+    transform: translate(600px,-320px);
+    z-index: 4;
+    @media screen and (max-width: 1200px){
+      transform: translate(450px,-320px);
+    }
+      @media screen and (max-width: 840px){
+    transform: translate(130px,-400px);
+    }
+}
+.kok{
+        width: 550px;
+    position: absolute;
+    transform: translate(600px,-260px);
+    z-index: 1;
+    @media screen and (max-width: 1200px){
+      transform: translate(460px,-260px);
+    }
+      @media screen and (max-width: 840px){
+    transform: translate(130px,-330px);
+    }
+}
+.qora{
+    position: absolute;
+    transform: translate(600px,-300px);
+    @media screen and (max-width: 1200px){
+      transform: translate(450px,-300px);
+    }
+      @media screen and (max-width: 840px){
+    transform: translate(130px,-440px);
+    }
+}
+.yarim{
+    width: 300px;
+    position: absolute;
+    transform: translate(200px, -105px);
+    z-index: 1;
+    @media screen and (max-width: 1200px){
+      transform: translate(100px,-105px);
+    }
+      @media screen and (max-width: 840px){
+    display: none;
+    }
+}
+.ten{
+    background-color: blue;
+    padding: 5px 20px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    color: white;
+    @media screen and (max-width: 840px){
+    display: none;
+    }
+}
 header{
     background-color: #FFE7BA;
 }
 
 li{
     color: #003459;
+    border-bottom: 2px solid #FFE7BA ;
+    &:hover{
+         border-bottom: 2px solid blue;
+    }
+}
+.li{
+    @media screen and (max-width: 840px){
+      display: none;
+    }
+}
+.input{
+    @media screen and (max-width: 840px){
+      display: none;
+    }
 }
 .nav{
     background-color:  #FFE7BA;
+    @media screen and (max-width: 840px){
+    flex-direction: column;
+    }
 }
 .qidiruv{
 vertical-align: middle;
-}
-.input{
-    outline-color: white;
 }
 .lupa{
     border-radius: 15px;
     border: 2px solid white;
     background-color: white;
     padding: 0.1rem 0.8rem;
+    input{
+        border: 1px solid white;
+    }
+    @media screen and (max-width: 840px){
+    background-color: #FCEED5;
+    }
 }
 .header_text{
     width: 100%;
     max-width: 500px;
+    z-index: 10;
     h1{
         color: #242B33;
         font-size: 55px;
@@ -44,8 +158,38 @@ vertical-align: middle;
 }
 .media{
     vertical-align: middle;
+    
 }
 .header_two{
+    z-index: 5;
     width: 100%;
     max-width: 700px;
+    transform: translateY(82px);
+      @media screen and (max-width: 840px){
+    transform: translateY(1px);
+    }
+}
+.drop{
+   position: absolute;
+   transform: translate(10px, 40px);
+   padding-top: 5px;
+   border-radius: 10px;
+    width: 50px;
+    height: 100px;
+    background-color: white;
+    display: none;
+    @media screen and (max-width: 840px){
+    display: none;
+    }
+}
+.til:hover~div{
+
+    display: block;
+
+}
+.menu{
+    display: none;
+    @media screen and (max-width: 840px){
+   display: block;
+    }
 }

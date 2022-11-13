@@ -1,11 +1,15 @@
 .grid{
-  width: 1200px;
   margin: 15px auto;
   display: grid;
   gap: 14px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "a1  a2  a3 ";
+     @media screen and (max-width: 840px){
+       display: block;
+       text-align: center;
+       width: 500px;
+    }
     .child{
         img{
             border-radius: 20px;
@@ -15,6 +19,7 @@
             margin-top: 10px;
             font-size: 16px;
             line-height: 24px;
+            
         }
         p{
             font-size: 14px;
@@ -26,28 +31,54 @@
             color:  #FDFDFD;
             border: 2px solid#00A7E7;
             border-radius: 15px;
+             @media screen and (max-width: 840px){
+             margin-left: 100px;
+    }
         }
     padding: 5px;
     border-radius: 25px;
      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-    }
 
-}
-child-1 {
+    }
+  child_1 {
 
   text-align: center;
   grid-area: a1;
 
-}
-child-2 {
+  }
+  child_2 {
 
   text-align: center;
   grid-area: a2;
+  @media screen and (max-width: 840px){
+   display: none;
+    }
 
-}
-child-2 {
+  }
+  child_3 {
 
   text-align: center;
-  grid-area: a2;
+  grid-area: a3;
+  @media screen and (max-width: 840px){
+   display: none;
+    } 
+  }
+}
+.child:hover{
+   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.9);
+}
 
+.margin-top{
+    margin-top: 40px;
+    h3{
+        margin-top: 10px;
+    }
+      @media screen and (max-width: 840px){
+       display: flex;
+       justify-content: center;
+       h3{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    }
 }

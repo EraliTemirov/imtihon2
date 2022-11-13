@@ -4,6 +4,9 @@
   max-width: 500px;
   position: absolute;
   transform: translateX(800px);
+  @media screen and (max-width: 840px){
+    transform: translate(250px,-200px);
+    }
   H_one{
     color: #242b33;
     font-size: 45px;
@@ -25,10 +28,22 @@
     width: 400px;
   }
 }
+.plan{
+  position: absolute;
+  display: none;
+   @media screen and (max-width: 840px){
+    display: block;
+    width: 800px;
+    transform: translate(0.1px,-92px);
+    }
+}
 .four {
   overflow:hidden;
   background-color: #003459;
   margin-top: 80px;
+   @media screen and (max-width: 840px){
+   height: 700px;
+    }
   .pappy{
     z-index: 1;
   }
@@ -38,6 +53,14 @@
   }
   .tort{
     transform: translate(14px);
-    
+    @media screen and (max-width: 840px){
+    display: none;
+    }
   }
+}
+.pappy{
+  transform: translateY(20px);
+  @media screen and (max-width: 840px){
+    transform: translate(200px,200px);
+    }
 }

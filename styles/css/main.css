@@ -346,6 +346,11 @@ a {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 840px) {
+  .flexx {
+    display: none;
+  }
+}
 
 .aligen-center {
   display: flex;
@@ -382,6 +387,12 @@ a {
   margin-right: 10px;
 }
 
+.btn:hover {
+  background-color: #003459;
+  color: white;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.471);
+}
+
 .btnn {
   font-size: 15px;
   border: 1px solid rgb(0, 34, 255);
@@ -390,6 +401,21 @@ a {
   padding: 0.6em 2.8em;
   border-radius: 20px;
   margin-top: 2rem;
+}
+
+.btnn:hover {
+  background-color: white;
+  color: #003459;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.471);
+}
+
+.btnnn {
+  font-size: 15px;
+  border: 1px solid rgb(0, 34, 255);
+  background: #003459;
+  color: white;
+  padding: 0.6em 2.8em;
+  border-radius: 20px;
 }
 
 .container {
@@ -408,24 +434,176 @@ a {
   clip: rect(0 0 0 0);
 }
 
+.yuza {
+  background-color: #c9a1a1;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  -webkit-animation: tugadi 0.3s linear 0.5s both;
+          animation: tugadi 0.3s linear 0.5s both;
+}
+.yuza .aylana {
+  width: 60px;
+  height: 60px;
+  border: 5px dashed black;
+  border-radius: 50%;
+  -webkit-animation: zagruzka 2s ease-in-out infinite;
+          animation: zagruzka 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes zagruzka {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes zagruzka {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes tugadi {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes tugadi {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.kichik {
+  transform: translate(140px, -390px);
+}
+@media screen and (max-width: 1200px) {
+  .kichik {
+    transform: translate(10px, -390px);
+  }
+}
+@media screen and (max-width: 840px) {
+  .kichik {
+    transform: translate(330px, -840px);
+  }
+}
+
+.rasm {
+  width: 650px;
+  position: absolute;
+  transform: translate(600px, -320px);
+  z-index: 4;
+}
+@media screen and (max-width: 1200px) {
+  .rasm {
+    transform: translate(450px, -320px);
+  }
+}
+@media screen and (max-width: 840px) {
+  .rasm {
+    transform: translate(130px, -400px);
+  }
+}
+
+.kok {
+  width: 550px;
+  position: absolute;
+  transform: translate(600px, -260px);
+  z-index: 1;
+}
+@media screen and (max-width: 1200px) {
+  .kok {
+    transform: translate(460px, -260px);
+  }
+}
+@media screen and (max-width: 840px) {
+  .kok {
+    transform: translate(130px, -330px);
+  }
+}
+
+.qora {
+  position: absolute;
+  transform: translate(600px, -300px);
+}
+@media screen and (max-width: 1200px) {
+  .qora {
+    transform: translate(450px, -300px);
+  }
+}
+@media screen and (max-width: 840px) {
+  .qora {
+    transform: translate(130px, -440px);
+  }
+}
+
+.yarim {
+  width: 300px;
+  position: absolute;
+  transform: translate(200px, -105px);
+  z-index: 1;
+}
+@media screen and (max-width: 1200px) {
+  .yarim {
+    transform: translate(100px, -105px);
+  }
+}
+@media screen and (max-width: 840px) {
+  .yarim {
+    display: none;
+  }
+}
+
+.ten {
+  background-color: blue;
+  padding: 5px 20px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  color: white;
+}
+@media screen and (max-width: 840px) {
+  .ten {
+    display: none;
+  }
+}
+
 header {
   background-color: #FFE7BA;
 }
 
 li {
   color: #003459;
+  border-bottom: 2px solid #FFE7BA;
+}
+li:hover {
+  border-bottom: 2px solid blue;
+}
+
+@media screen and (max-width: 840px) {
+  .li {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .input {
+    display: none;
+  }
 }
 
 .nav {
   background-color: #FFE7BA;
 }
+@media screen and (max-width: 840px) {
+  .nav {
+    flex-direction: column;
+  }
+}
 
 .qidiruv {
   vertical-align: middle;
-}
-
-.input {
-  outline-color: white;
 }
 
 .lupa {
@@ -434,10 +612,19 @@ li {
   background-color: white;
   padding: 0.1rem 0.8rem;
 }
+.lupa input {
+  border: 1px solid white;
+}
+@media screen and (max-width: 840px) {
+  .lupa {
+    background-color: #FCEED5;
+  }
+}
 
 .header_text {
   width: 100%;
   max-width: 500px;
+  z-index: 10;
 }
 .header_text h1 {
   color: #242B33;
@@ -463,8 +650,44 @@ li {
 }
 
 .header_two {
+  z-index: 5;
   width: 100%;
   max-width: 700px;
+  transform: translateY(82px);
+}
+@media screen and (max-width: 840px) {
+  .header_two {
+    transform: translateY(1px);
+  }
+}
+
+.drop {
+  position: absolute;
+  transform: translate(10px, 40px);
+  padding-top: 5px;
+  border-radius: 10px;
+  width: 50px;
+  height: 100px;
+  background-color: white;
+  display: none;
+}
+@media screen and (max-width: 840px) {
+  .drop {
+    display: none;
+  }
+}
+
+.til:hover ~ div {
+  display: block;
+}
+
+.menu {
+  display: none;
+}
+@media screen and (max-width: 840px) {
+  .menu {
+    display: block;
+  }
 }
 
 .new {
@@ -479,6 +702,12 @@ li {
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "aa  aa  aa  aa" "a1  a2  a3  a4 " "a5  a6  a7  a8 ";
 }
+@media screen and (max-width: 840px) {
+  .new {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "aa  aa " "a1  a2 " " a3  a4 " "a5  a6 " " a7  a8 ";
+  }
+}
 
 .sarlovha h2 {
   margin: 0.5rem auto;
@@ -486,6 +715,12 @@ li {
 
 .tree {
   grid-area: aa;
+}
+@media screen and (max-width: 840px) {
+  .tree {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .card {
@@ -497,15 +732,34 @@ li {
   margin-bottom: 5px;
   font-size: 16px;
 }
+@media screen and (max-width: 840px) {
+  .card h3 {
+    font-size: 20px;
+  }
+}
 .card .span {
   margin-bottom: 5px;
   font-size: 12px;
   color: #667479;
 }
+@media screen and (max-width: 840px) {
+  .card .span {
+    font-size: 18px;
+  }
+}
 .card .moniy {
   font-size: 14px;
   display: block;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 840px) {
+  .card .moniy {
+    font-size: 18px;
+  }
+}
+
+.card:hover {
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.4);
 }
 
 card-1 {
@@ -548,12 +802,23 @@ card-8 {
   grid-area: a8;
 }
 
+@media screen and (max-width: 840px) {
+  .mushuk {
+    width: 100%;
+  }
+}
+
 .header_tex {
   z-index: 1;
   width: 100%;
   max-width: 500px;
   position: absolute;
   transform: translateX(800px);
+}
+@media screen and (max-width: 840px) {
+  .header_tex {
+    transform: translate(250px, -200px);
+  }
 }
 .header_tex H_one {
   color: #242b33;
@@ -575,10 +840,27 @@ card-8 {
   width: 400px;
 }
 
+.plan {
+  position: absolute;
+  display: none;
+}
+@media screen and (max-width: 840px) {
+  .plan {
+    display: block;
+    width: 800px;
+    transform: translate(0.1px, -92px);
+  }
+}
+
 .four {
   overflow: hidden;
   background-color: #003459;
   margin-top: 80px;
+}
+@media screen and (max-width: 840px) {
+  .four {
+    height: 700px;
+  }
 }
 .four .pappy {
   z-index: 1;
@@ -588,6 +870,20 @@ card-8 {
 }
 .four .tort {
   transform: translate(14px);
+}
+@media screen and (max-width: 840px) {
+  .four .tort {
+    display: none;
+  }
+}
+
+.pappy {
+  transform: translateY(20px);
+}
+@media screen and (max-width: 840px) {
+  .pappy {
+    transform: translate(200px, 200px);
+  }
 }
 
 .bon {
@@ -601,9 +897,19 @@ card-8 {
 .section4 {
   margin-top: 5rem;
 }
+@media screen and (max-width: 840px) {
+  .section4 {
+    display: none;
+  }
+}
 
 .bac {
   background-color: #FFB775;
+}
+@media screen and (max-width: 840px) {
+  .bac {
+    display: none;
+  }
 }
 .bac .asosiy {
   width: 500px;
@@ -634,12 +940,18 @@ card-8 {
 }
 
 .grid {
-  width: 1200px;
   margin: 15px auto;
   display: grid;
   gap: 14px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "a1  a2  a3 ";
+}
+@media screen and (max-width: 840px) {
+  .grid {
+    display: block;
+    text-align: center;
+    width: 500px;
+  }
 }
 .grid .child {
   padding: 5px;
@@ -666,18 +978,95 @@ card-8 {
   border: 2px solid #00A7E7;
   border-radius: 15px;
 }
-
-child-1 {
+@media screen and (max-width: 840px) {
+  .grid .child .border {
+    margin-left: 100px;
+  }
+}
+.grid child_1 {
   text-align: center;
   grid-area: a1;
 }
-
-child-2 {
+.grid child_2 {
   text-align: center;
   grid-area: a2;
 }
-
-child-2 {
+@media screen and (max-width: 840px) {
+  .grid child_2 {
+    display: none;
+  }
+}
+.grid child_3 {
   text-align: center;
-  grid-area: a2;
+  grid-area: a3;
+}
+@media screen and (max-width: 840px) {
+  .grid child_3 {
+    display: none;
+  }
+}
+
+.child:hover {
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.9);
+}
+
+.margin-top {
+  margin-top: 40px;
+}
+.margin-top h3 {
+  margin-top: 10px;
+}
+@media screen and (max-width: 840px) {
+  .margin-top {
+    display: flex;
+    justify-content: center;
+  }
+  .margin-top h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+
+footer {
+  margin: 0 auto;
+  padding-top: 80px;
+  width: 100%;
+  background-color: #FCEED5;
+}
+
+.row {
+  background-color: #003459;
+  border: 2px solid #003459;
+  border-radius: 15px;
+  height: 136px;
+}
+.row h3 {
+  color: #FDFDFD;
+  font-size: 24px;
+  width: 100%;
+  max-width: 350px;
+  padding-left: 20px;
+}
+.row .net {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid white;
+  border-radius: 15px;
+  height: 60px;
+  background-color: white;
+}
+.row .net input {
+  width: 100%;
+  max-width: 370px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.282);
+  border-radius: 5px;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.footer_two {
+  padding-top: 25px;
+  border-bottom: 2px solid #003459;
+  padding-bottom: 25px;
 }/*# sourceMappingURL=main.css.map */

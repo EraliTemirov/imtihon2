@@ -1,0 +1,41 @@
+footer{
+    margin: 0 auto;
+    padding-top: 80px;
+    width: 100%;
+    background-color: #FCEED5;
+}
+.row{
+    background-color:  #003459;
+    border: 2px solid  #003459;
+    border-radius: 15px;
+    height: 136px;
+    h3{
+        color: #FDFDFD;
+        font-size: 24px;
+        width: 100%;
+        max-width: 350px;
+        padding-left: 20px;
+    }
+    .net{
+        width: 100%;
+        max-width: 600px;
+        border: 1px solid white;
+        border-radius: 15px;
+        height: 60px;
+        background-color: white;
+        input{
+            width: 100%;
+            max-width: 370px;
+            height: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.282);
+            border-radius: 5px;
+            font-size: 16px;
+            padding-left: 20px;
+        }
+    }
+}
+.footer_two{
+    padding-top: 25px;
+    border-bottom:2px solid #003459;
+    padding-bottom: 25px;
+}

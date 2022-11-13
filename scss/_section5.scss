@@ -1,5 +1,8 @@
 .bac{
     background-color: #FFB775;
+    @media screen and (max-width: 840px){
+   display: none;
+    }
 
 .asosiy{
     width: 500px;
