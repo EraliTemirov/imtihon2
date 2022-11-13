@@ -1139,7 +1139,7 @@ card-8 {
     display: none;
   }
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 450px) {
   .child_3 {
     display: block;
   }
