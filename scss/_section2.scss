@@ -7,6 +7,14 @@
   @media screen and (max-width: 840px){
     transform: translate(250px,-200px);
     }
+      @media screen and (max-width: 840px){
+    transform: translate(150px,-200px);
+
+  }
+     @media screen and (max-width: 450px){
+    transform: translate(10px,-200px);
+    width: 400px;
+  }
   H_one{
     color: #242b33;
     font-size: 45px;
@@ -36,7 +44,15 @@
     width: 800px;
     transform: translate(0.1px,-92px);
     }
-}
+      @media screen and (max-width: 700px){
+    width: 700px;
+    transform: translate(0.1px,-167px);
+    }
+    @media screen and (max-width: 450px){
+    transform: translate(0.1px,-207px);
+    }
+  }
+
 .four {
   overflow:hidden;
   background-color: #003459;
@@ -50,6 +66,8 @@
   .chorak{
    
     transform: translate(-1217px, 40px);
+     @media screen and (max-width: 700px){
+    display: none;
   }
   .tort{
     transform: translate(14px);
@@ -62,5 +80,8 @@
   transform: translateY(20px);
   @media screen and (max-width: 840px){
     transform: translate(200px,200px);
+      @media screen and (max-width: 700px){
+    transform: translate(100px,200px);
+  }
     }
-}
+}}

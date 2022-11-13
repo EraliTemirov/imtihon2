@@ -33,7 +33,9 @@
     @media screen and (max-width: 840px){
     transform: translate(330px,-840px);
     }
-
+ @media screen and (max-width: 800px){
+   display: none;
+    }
 }
 .rasm{
     width: 650px;
@@ -44,7 +46,20 @@
       transform: translate(450px,-320px);
     }
       @media screen and (max-width: 840px){
-    transform: translate(130px,-400px);
+    transform: translate(100px,-320px);
+    }
+    @media screen and (max-width: 800px){
+    transform: translate(100px,-400px);
+    }
+      @media screen and (max-width: 700px){
+    transform: translate(50px,-400px);
+    }
+      @media screen and (max-width: 600px){
+    transform: translate(30px,-310px);
+    width: 500px;
+    }
+      @media screen and (max-width: 450px){
+    transform: translate(10px,-280px);
     }
 }
 .kok{
@@ -56,7 +71,16 @@
       transform: translate(460px,-260px);
     }
       @media screen and (max-width: 840px){
-    transform: translate(130px,-330px);
+    transform: translate(86px,-244px);
+    }
+     @media screen and (max-width: 800px){
+    transform: translate(90px,-350px);
+    }
+      @media screen and (max-width: 700px){
+    transform: translate(50px,-350px);
+    }
+      @media screen and (max-width: 600px){
+    display: none;
     }
 }
 .qora{
@@ -68,7 +92,9 @@
       @media screen and (max-width: 840px){
     transform: translate(130px,-440px);
     }
-}
+    display: none;
+    }
+
 .yarim{
     width: 300px;
     position: absolute;
@@ -79,6 +105,9 @@
     }
       @media screen and (max-width: 840px){
     display: none;
+    }
+      @media screen and (max-width: 800px){
+   display: none;
     }
 }
 .ten{
@@ -192,4 +221,32 @@ vertical-align: middle;
     @media screen and (max-width: 840px){
    display: block;
     }
+}
+.menu:hover~div{
+display: block;
+}
+.yon{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    .tenn{
+    background-color: blue;
+    padding: 1px 5px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    color: white;
+}
+.lup{
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: white;
+    padding: 0.1rem 0.8rem;
+   
+    inpu{
+        border: 1px solid white;
+         margin-bottom: 10px;
+    }
+    
+}
 }

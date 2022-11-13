@@ -12,6 +12,7 @@
     "a1  a2  a3  a4 "
     "a5  a6  a7  a8 ";
         @media screen and (max-width: 840px){
+          width: 830px;
      grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     "aa  aa "
@@ -19,6 +20,17 @@
     " a3  a4 "
     "a5  a6 "
     " a7  a8 ";
+    }
+     @media screen and (max-width: 450px){
+          width: 440px;
+     grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "aa  aa "
+    "a1  a2 "
+    " a3  a4 "
+    "a5  a6 "
+    " a7  a8 "
+    "ab  ab ";
     }
 }
 .sarlovha {
@@ -103,4 +115,4 @@ card-8 {
     @media screen and (max-width: 840px){
     width: 100%;
     }
-}
+  }
