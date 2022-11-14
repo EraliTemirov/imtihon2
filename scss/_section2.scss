@@ -4,18 +4,17 @@
   max-width: 500px;
   position: absolute;
   transform: translateX(800px);
-  @media screen and (max-width: 840px){
-    transform: translate(250px,-200px);
-    }
-      @media screen and (max-width: 840px){
-    transform: translate(150px,-200px);
-
+  @media screen and (max-width: 840px) {
+    transform: translate(250px, -200px);
   }
-     @media screen and (max-width: 450px){
-    transform: translate(10px,-200px);
+  @media screen and (max-width: 840px) {
+    transform: translate(150px, -200px);
+  }
+  @media screen and (max-width: 450px) {
+    transform: translate(10px, -200px);
     width: 400px;
   }
-  H_one{
+  H_one {
     color: #242b33;
     font-size: 45px;
   }
@@ -23,7 +22,7 @@
     color: #242b33;
     font-size: 45px;
   }
-  
+
   h2 {
     color: #242b33;
     font-size: 33px;
@@ -36,52 +35,52 @@
     width: 400px;
   }
 }
-.plan{
+.plan {
   position: absolute;
   display: none;
-   @media screen and (max-width: 840px){
+  @media screen and (max-width: 840px) {
     display: block;
     width: 800px;
-    transform: translate(0.1px,-92px);
-    }
-      @media screen and (max-width: 700px){
-    width: 700px;
-    transform: translate(0.1px,-167px);
-    }
-    @media screen and (max-width: 450px){
-    transform: translate(0.1px,-207px);
-    }
+    transform: translate(0.1px, -92px);
   }
+  @media screen and (max-width: 700px) {
+    width: 700px;
+    transform: translate(0.1px, -167px);
+  }
+  @media screen and (max-width: 450px) {
+    transform: translate(0.1px, -207px);
+  }
+}
 
 .four {
-  overflow:hidden;
+  overflow: hidden;
   background-color: #003459;
   margin-top: 80px;
-   @media screen and (max-width: 840px){
-   height: 700px;
-    }
-  .pappy{
+  @media screen and (max-width: 840px) {
+    height: 700px;
+  }
+  .pappy {
     z-index: 1;
   }
-  .chorak{
-   
+  .chorak {
     transform: translate(-1217px, 40px);
-     @media screen and (max-width: 700px){
-    display: none;
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+    .tort {
+      transform: translate(14px);
+      @media screen and (max-width: 840px) {
+        display: none;
+      }
+    }
   }
-  .tort{
-    transform: translate(14px);
-    @media screen and (max-width: 840px){
-    display: none;
+  .pappy {
+    transform: translateY(20px);
+    @media screen and (max-width: 840px) {
+      transform: translate(200px, 200px);
+      @media screen and (max-width: 700px) {
+        transform: translate(100px, 200px);
+      }
     }
   }
 }
-.pappy{
-  transform: translateY(20px);
-  @media screen and (max-width: 840px){
-    transform: translate(200px,200px);
-      @media screen and (max-width: 700px){
-    transform: translate(100px,200px);
-  }
-    }
-}}

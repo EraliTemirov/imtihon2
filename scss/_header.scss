@@ -1,252 +1,248 @@
-.yuza{
-    background-color: #c9a1a1;
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    display: grid;
-    place-items: center;
-    animation: tugadi .3s linear .5s both;
-    .aylana{
-        width: 60px;
-        height: 60px;
-        border: 5px dashed black;
-        border-radius: 50%;
-        animation: zagruzka 2s ease-in-out infinite;
-    }
+.yuza {
+  background-color: #c9a1a1;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  animation: tugadi 0.5s linear 3s both;
+  .aylana {
+    width: 60px;
+    height: 60px;
+    border: 5px dashed black;
+    border-radius: 50%;
+    animation: zagruzka 1s ease-in-out infinite;
+  }
 }
-@keyframes zagruzka{
-    to{
-        transform: rotate(360deg);
-    }
+@keyframes zagruzka {
+  to {
+    transform: rotate(360deg);
+  }
 }
 @keyframes tugadi {
-    to{
-        visibility: hidden;
-        opacity: 0;
-    }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
-.kichik{
-    transform: translate(140px,-390px);
-     @media screen and (max-width: 1200px){
-      transform: translate(10px,-390px);
-    }
-    @media screen and (max-width: 840px){
-    transform: translate(330px,-840px);
-    }
- @media screen and (max-width: 800px){
-   display: none;
-    }
+.kichik {
+  transform: translate(140px, -390px);
+  @media screen and (max-width: 1200px) {
+    transform: translate(10px, -390px);
+  }
+  @media screen and (max-width: 840px) {
+    transform: translate(330px, -840px);
+  }
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
-.rasm{
-    width: 650px;
-    position: absolute;
-    transform: translate(600px,-320px);
-    z-index: 4;
-    @media screen and (max-width: 1200px){
-      transform: translate(450px,-320px);
-    }
-      @media screen and (max-width: 840px){
-    transform: translate(100px,-320px);
-    }
-    @media screen and (max-width: 800px){
-    transform: translate(100px,-400px);
-    }
-      @media screen and (max-width: 700px){
-    transform: translate(50px,-400px);
-    }
-      @media screen and (max-width: 600px){
-    transform: translate(30px,-310px);
+.rasm {
+  width: 650px;
+  position: absolute;
+  transform: translate(600px, -320px);
+  z-index: 4;
+  @media screen and (max-width: 1200px) {
+    transform: translate(450px, -320px);
+  }
+  @media screen and (max-width: 840px) {
+    transform: translate(100px, -320px);
+  }
+  @media screen and (max-width: 800px) {
+    transform: translate(100px, -400px);
+  }
+  @media screen and (max-width: 700px) {
+    transform: translate(50px, -400px);
+  }
+  @media screen and (max-width: 600px) {
+    transform: translate(30px, -310px);
     width: 500px;
-    }
-      @media screen and (max-width: 450px){
-    transform: translate(10px,-280px);
-    }
+  }
+  @media screen and (max-width: 450px) {
+    transform: translate(10px, -280px);
+  }
 }
-.kok{
-        width: 550px;
-    position: absolute;
-    transform: translate(600px,-260px);
-    z-index: 1;
-    @media screen and (max-width: 1200px){
-      transform: translate(460px,-260px);
-    }
-      @media screen and (max-width: 840px){
-    transform: translate(86px,-244px);
-    }
-     @media screen and (max-width: 800px){
-    transform: translate(90px,-350px);
-    }
-      @media screen and (max-width: 700px){
-    transform: translate(50px,-350px);
-    }
-      @media screen and (max-width: 600px){
+.kok {
+  width: 550px;
+  position: absolute;
+  transform: translate(600px, -260px);
+  z-index: 1;
+  @media screen and (max-width: 1200px) {
+    transform: translate(460px, -260px);
+  }
+  @media screen and (max-width: 840px) {
+    transform: translate(86px, -244px);
+  }
+  @media screen and (max-width: 800px) {
+    transform: translate(90px, -350px);
+  }
+  @media screen and (max-width: 700px) {
+    transform: translate(50px, -350px);
+  }
+  @media screen and (max-width: 600px) {
     display: none;
-    }
+  }
 }
-.qora{
-    position: absolute;
-    transform: translate(600px,-300px);
-    @media screen and (max-width: 1200px){
-      transform: translate(450px,-300px);
-    }
-      @media screen and (max-width: 840px){
-    transform: translate(130px,-440px);
-    }
-    display: none;
-    }
-
-.yarim{
-    width: 300px;
-    position: absolute;
-    transform: translate(200px, -105px);
-    z-index: 1;
-    @media screen and (max-width: 1200px){
-      transform: translate(100px,-105px);
-    }
-      @media screen and (max-width: 840px){
-    display: none;
-    }
-      @media screen and (max-width: 800px){
-   display: none;
-    }
-}
-.ten{
-    background-color: blue;
-    padding: 5px 20px;
-    border: 1px solid blue;
-    border-radius: 10px;
-    color: white;
-    @media screen and (max-width: 840px){
-    display: none;
-    }
-}
-header{
-    background-color: #FFE7BA;
+.qora {
+  position: absolute;
+  transform: translate(600px, -300px);
+  @media screen and (max-width: 1200px) {
+    transform: translate(450px, -300px);
+  }
+  @media screen and (max-width: 840px) {
+    transform: translate(130px, -440px);
+  }
+  display: none;
 }
 
-li{
-    color: #003459;
-    border-bottom: 2px solid #FFE7BA ;
-    &:hover{
-         border-bottom: 2px solid blue;
-    }
+.yarim {
+  width: 300px;
+  position: absolute;
+  transform: translate(200px, -105px);
+  z-index: 1;
+  @media screen and (max-width: 1200px) {
+    transform: translate(100px, -105px);
+  }
+  @media screen and (max-width: 840px) {
+    display: none;
+  }
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
-.li{
-    @media screen and (max-width: 840px){
-      display: none;
-    }
+.ten {
+  background-color: blue;
+  padding: 5px 20px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  color: white;
+  @media screen and (max-width: 840px) {
+    display: none;
+  }
 }
-.input{
-    @media screen and (max-width: 840px){
-      display: none;
-    }
+header {
+  background-color: #ffe7ba;
 }
-.nav{
-    background-color:  #FFE7BA;
-    @media screen and (max-width: 840px){
+
+li {
+  color: #003459;
+  border-bottom: 2px solid #ffe7ba;
+  &:hover {
+    border-bottom: 2px solid blue;
+  }
+}
+.li {
+  @media screen and (max-width: 840px) {
+    display: none;
+  }
+}
+.input {
+  @media screen and (max-width: 840px) {
+    display: none;
+  }
+}
+.nav {
+  background-color: #ffe7ba;
+  @media screen and (max-width: 840px) {
     flex-direction: column;
-    }
+  }
 }
-.qidiruv{
-vertical-align: middle;
+.qidiruv {
+  vertical-align: middle;
 }
-.lupa{
-    border-radius: 15px;
-    border: 2px solid white;
-    background-color: white;
-    padding: 0.1rem 0.8rem;
-    input{
-        border: 1px solid white;
-    }
-    @media screen and (max-width: 840px){
-    background-color: #FCEED5;
-    }
+.lupa {
+  border-radius: 15px;
+  border: 2px solid white;
+  background-color: white;
+  padding: 0.1rem 0.8rem;
+  input {
+    border: 1px solid white;
+  }
+  @media screen and (max-width: 840px) {
+    background-color: #fceed5;
+  }
 }
-.header_text{
-    width: 100%;
-    max-width: 500px;
-    z-index: 10;
-    h1{
-        color: #242B33;
-        font-size: 55px;
-    }
-    .H_one{
-        color: #242B33;
-        font-size: 55px;
-    }
-    h2{
-        color: #242B33;
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
-    p{
-        color: #242B33;
-        font-size: 16px;
-        line-height: 1.8rem;
-    }
+.header_text {
+  width: 100%;
+  max-width: 500px;
+  z-index: 10;
+  h1 {
+    color: #242b33;
+    font-size: 55px;
+  }
+  .H_one {
+    color: #242b33;
+    font-size: 55px;
+  }
+  h2 {
+    color: #242b33;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  p {
+    color: #242b33;
+    font-size: 16px;
+    line-height: 1.8rem;
+  }
 }
-.media{
-    vertical-align: middle;
-    
+.media {
+  vertical-align: middle;
 }
-.header_two{
-    z-index: 5;
-    width: 100%;
-    max-width: 700px;
-    transform: translateY(82px);
-      @media screen and (max-width: 840px){
+.header_two {
+  z-index: 5;
+  width: 100%;
+  max-width: 700px;
+  transform: translateY(82px);
+  @media screen and (max-width: 840px) {
     transform: translateY(1px);
-    }
+  }
 }
-.drop{
-   position: absolute;
-   transform: translate(10px, 40px);
-   padding-top: 5px;
-   border-radius: 10px;
-    width: 50px;
-    height: 100px;
-    background-color: white;
+.drop {
+  position: absolute;
+  transform: translate(10px, 40px);
+  padding-top: 5px;
+  border-radius: 10px;
+  width: 50px;
+  height: 100px;
+  background-color: white;
+  display: none;
+  @media screen and (max-width: 840px) {
     display: none;
-    @media screen and (max-width: 840px){
-    display: none;
-    }
+  }
 }
-.til:hover~div{
-
+.til:hover ~ div {
+  display: block;
+}
+.menu {
+  display: none;
+  @media screen and (max-width: 840px) {
     display: block;
-
+  }
 }
-.menu{
-    display: none;
-    @media screen and (max-width: 840px){
-   display: block;
-    }
+.menu:hover ~ div {
+  display: block;
 }
-.menu:hover~div{
-display: block;
-}
-.yon{
-    display: none;
-    position: absolute;
-    width: 300px;
-    height: 600px;
-    .tenn{
+.yon {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  .tenn {
     background-color: blue;
     padding: 1px 5px;
     border: 1px solid blue;
     border-radius: 10px;
     color: white;
-}
-.lup{
+  }
+  .lup {
     border-radius: 15px;
     border: 2px solid white;
     background-color: white;
     padding: 0.1rem 0.8rem;
-   
-    inpu{
-        border: 1px solid white;
-         margin-bottom: 10px;
+
+    inpu {
+      border: 1px solid white;
+      margin-bottom: 10px;
     }
-    
-}
+  }
 }

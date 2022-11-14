@@ -1,11 +1,11 @@
-.container{
-    margin: 0 auto;
-    width: 1200px;
-  
-   @media screen and (max-width: 840px){
-   width: 100%;
-     @media screen and (max-width: 600px){
-    width: 550px;
+.container {
+  margin: 0 auto;
+  width: 1200px;
+
+  @media screen and (max-width: 840px) {
+    width: 100%;
+    @media screen and (max-width: 600px) {
+      width: 550px;
     }
-}
+  }
 }

@@ -1,34 +1,33 @@
-.bac{
-    background-color: #FFB775;
-    @media screen and (max-width: 840px){
-   display: none;
-    }
+.bac {
+  background-color: #ffb775;
+  @media screen and (max-width: 840px) {
+    display: none;
+  }
 
-.asosiy{
+  .asosiy {
     width: 500px;
     position: absolute;
     z-index: 500;
-    transform: translate(-70px,-100px);
-    span{
-        font-size: 45px;
+    transform: translate(-70px, -100px);
+    span {
+      font-size: 45px;
     }
-    h2{
-        font-size: 30px;
-        padding-bottom: 10px;
-        padding-top: 10px;
+    h2 {
+      font-size: 30px;
+      padding-bottom: 10px;
+      padding-top: 10px;
     }
-    p{
-        width: 300px;
-        line-height: 1.8rem;
+    p {
+      width: 300px;
+      line-height: 1.8rem;
     }
+  }
+  .birinchi {
+    z-index: 100;
+    transform: translate(600px, -300px);
+  }
 }
-    .birinchi{
-        z-index: 100;
-        transform: translate(600px,-300px);
-    }
+.img {
+  z-index: 1;
+  transform: translateX(-450px);
 }
-    .img{
-        z-index: 1;
-        transform: translateX(-450px);
-    }
- 
